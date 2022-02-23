@@ -1,0 +1,9 @@
+{% if entries_list %}
+    <ul>
+        {% for entry in entries_list %}
+        <li><a href="/entry/{{ entry.id }}">{{ entry }}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No entries are available</p>
+{% endif %}

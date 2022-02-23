@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Conor's Bake Off!</title>
+        <meta name="description" content="">
+    </head>
+    <body>
+        <h1>Welcome to Conor's Bake Off!</h1><br>
+        <a href="{% url 'enter' %}">Enter competition</a><br>
+        {% if voting %}
+        <a href="{% url 'vote' %}">Vote</a><br>
+        {% endif %}
+    </body>
+</html>
